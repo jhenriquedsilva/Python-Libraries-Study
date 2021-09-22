@@ -181,8 +181,37 @@ for i in range(8):
 print(arr17[[2,6,7]])
 print()
 
-arr18 = np.arange(32).reshape((4,8))
+arr18 = np.arange(32).reshape((8,4))
 print(arr18)
 
-print()
-print(arr18[[0,1,2,3],[7,7,7,7]])
+
+print("\n",arr18[[0,1,2,3],[0,3,1,2]])
+
+arr19 = np.arange(15).reshape((3,5))
+print("\n",arr19)
+print("\n",arr19.T)
+
+arr20 = np.random.randn(6, 3)
+print("\n",arr20)
+print("\n",arr20.T)
+print("\n",np.dot(arr20, arr20.T))
+
+arr21 = np.arange(16).reshape((2,2,4))
+print("\n",arr21)
+print("\n\n",arr21.transpose((1,0,2)))
+
+arr22 = np.arange(4).reshape((2,2))
+print("\n",arr22)
+print("\n",arr22.swapaxes(0,1))
+
+arr23 = np.arange(10)
+print("\n",np.sqrt(arr23))
+print("\n",np.exp(arr23))
+print(arr23)
+
+x = np.random.randn(8)
+y = np.random.randn(8)
+
+print("\n",x)
+print(y)
+print(np.maximum(y,x))
